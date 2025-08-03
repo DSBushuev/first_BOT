@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv
 
 async def main():
-    await async_main()
+    # await async_main()
     bot = Bot(token=os.getenv('TOKEN_API'))
     dp = Dispatcher(bot=bot)
 

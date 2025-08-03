@@ -10,8 +10,7 @@ router = Router()
 @router.message(filters.CommandStart())
 async def cmd_start(message:types.Message):
     await rq.set_user(message.from_user.id)
-    await message.answer(f"Твой Telegram ID: {message.from_user.id}")
-    #await message.reply(f"Добро пожаловать в телеграмм-магазин кросовок", reply_markup=kb.main)
+    await message.reply(f"Добро пожаловать в телеграмм-магазин кросовок", reply_markup=kb.main)
 
 
 @router.message(F.text == 'Catalog')

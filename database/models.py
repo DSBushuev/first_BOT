@@ -1,4 +1,4 @@
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
+"""from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 from sqlalchemy.ext.asyncio import AsyncAttrs, async_sessionmaker, create_async_engine
 from sqlalchemy import BigInteger, ForeignKey, String, Float, Text, DateTime # Import DateTime
 from sqlalchemy.ext.asyncio import AsyncAttrs
@@ -164,4 +164,4 @@ class ActivityLog(Base):
 
 async def async_main():
     async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
+        await conn.run_sync(Base.metadata.create_all)"""

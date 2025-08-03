@@ -1,4 +1,4 @@
-from sqlalchemy import select, update, delete
+"""from sqlalchemy import select, update, delete
 from database.models import async_session
 from database.models import User, Item, Category
 
@@ -33,4 +33,4 @@ async def get_description(item_id):
             select(Item).where(Item.id == item_id)
         )
         item = result.scalar_one_or_none()
-        return item.description
+        return item.description"""
